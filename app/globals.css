@@ -1,0 +1,91 @@
+/* Reset / Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+  background-color: #000000; /* Pure black background */
+  color: #ffffff;           /* White text */
+  line-height: 1.6;
+}
+
+/* Links */
+a {
+  color: #ffdf00; /* Gold accent */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #ffd700;
+}
+
+/* Sections */
+section {
+  padding: 2rem;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 1rem;
+  color: #dddddd;
+}
+
+/* Chat / Card Boxes */
+.box, .chat-box, .card {
+  border: 1px solid #333;
+  border-radius: 8px;
+  background-color: #111111; /* Dark gray background */
+  padding: 1rem;
+  color: #ffffff;
+  transition: box-shadow 0.3s ease;
+}
+
+/* Yellow glowing hover */
+.box:hover, .chat-box:hover, .card:hover {
+  box-shadow: 0 0 15px #ffd700;
+}
+
+/* Buttons */
+button {
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #ffdf00;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+  background-color: #111111;
+  box-shadow: 0 0 10px #ffd700;
+}
+
+/* Navigation bar */
+nav {
+  background-color: #000000;
+  border-bottom: 1px solid #111111;
+  padding: 1rem 2rem;
+}
+
+nav a {
+  margin-right: 1rem;
+  color: #ffffff;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
