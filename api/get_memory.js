@@ -1,35 +1,18 @@
-import { NextApiRequest, NextApiResponse } from "next";
-import Stripe from "stripe";
-
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string, {
-  apiVersion: "2023-10-16",
-});
-
-export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+export default async function handler(req, res) {
   if (req.method !== "POST") return res.status(405).json({ error: "Method not allowed" });
 
   try {
-    const { amount = 500 } = req.body; // default £5
-
-    const session = await stripe.checkout.sessions.create({
-      payment_method_types: ["card"],
-      mode: "payment",
-      line_items: [
-        {
-          price_data: {
-            currency: "gbp",
-            product_data: { name: "Support PhilMirrorEnginei.Ai" },
-            unit_amount: amount,
-          },
-          quantity: 1,
-        },
-      ],
-      success_url: `${process.env.NEXT_PUBLIC_URL}/success`,
-      cancel_url: `${process.env.NEXT_PUBLIC_URL}/cancel`,
+    const response = await fetch(`${process.env.PMEI_API_BASE}/save_memory`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "X-API-KEY": process.env.API_KEY,
+      },
+      body: JSON.stringify(req.body),
     });
-
-    res.status(200).json({ url: session.url });
-  } catch (err: any) {
+    const data = await response.json();
+    res.status(response.status).json(data);
+  } catch (err) {
     res.status(500).json({ error: err.message });
   }
 }
