@@ -2,15 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Animation plugin */
-@import "tailwindcss-animate";
-
-/* Optional custom variables */
-:root {
-  --background: #ffffff;
-  --foreground: #111111;
-}
-
+/* Optional global resets */
 @layer base {
   * {
     @apply border-border outline-ring/50;
