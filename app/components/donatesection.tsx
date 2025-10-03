@@ -1,6 +1,6 @@
 "use client";
 
-import Button from "./ui/button"; // correct relative path
+import Button from "./ui/button";  
 
 export default function DonateSection() {
   return (
