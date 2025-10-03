@@ -1,0 +1,12 @@
+{
+  "name": "DavePMEI Web DevContainer",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:20",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "bradlc.vscode-tailwindcss"
+      ]
+    }
+  }
+}
