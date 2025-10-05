@@ -5,11 +5,19 @@
     "vscode": {
       "extensions": [
         "bradlc.vscode-tailwindcss",
-        "christian-kohler.npm-intellisense",
-        "eamodio.gitlens",
-        "donjayamanne.githistory",
-        "ms-vscode-remote.remote-containers"
-      ]
+        "ms-vscode.vscode-typescript-next",
+        "esbenp.prettier-vscode"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "tailwindCSS.includeLanguages": {
+          "typescript": "javascript",
+          "typescriptreact": "javascriptreact"
+        },
+        "files.associations": {
+          "*.css": "tailwindcss"
+        }
+      }
     }
   },
   "postCreateCommand": "npm install"
