@@ -20,5 +20,5 @@
       }
     }
   },
-  "postCreateCommand": "npm install"
+  "postCreateCommand": "npm install && code --install-extension bradlc.vscode-tailwindcss"
 }
