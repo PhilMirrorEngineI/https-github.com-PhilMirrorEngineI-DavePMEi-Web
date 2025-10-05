@@ -1,12 +1,16 @@
 {
-  "name": "DavePMEI Web DevContainer",
+  "name": "DavePMEi Web DevContainer",
   "image": "mcr.microsoft.com/devcontainers/typescript-node:20",
-
   "customizations": {
     "vscode": {
       "extensions": [
-        "bradlc.vscode-tailwindcss"
+        "bradlc.vscode-tailwindcss",
+        "christian-kohler.npm-intellisense",
+        "eamodio.gitlens",
+        "donjayamanne.githistory",
+        "ms-vscode-remote.remote-containers"
       ]
     }
-  }
+  },
+  "postCreateCommand": "npm install"
 }
