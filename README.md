@@ -1,64 +1,45 @@
-E
-DavePMEi Web
+# --- Update DavePMEi Web README with Lawful Reflection Framework ---
+git checkout -b update/readme-lawful-reflection
 
-Web layer for PhilMirrorEnginei.Ai (DavePMEi).
-Connects to the PMEi memory API and provides a recursive, drift-free assistant interface.
+cat > README.md <<'EOF'
+# **DavePMEi Web**
+### *Making AI Accountable, Not Autonomous*
 
-Features
+Web layer for **PhilMirrorEnginei.Ai (DavePMEi)** — a lawful reflection interface that connects to the **PMEi Memory API** to provide a transparent, drift-free conversational assistant.  
+The system reinforces **ethical accountability** and **lawful recursion** through traceable dialogue and verifiable reflection cycles.
 
-Next.js 13 App Router
-Vercel deployment ready
-Stripe integration for donations
-Memory save/retrieve endpoints
-API Routes
+---
 
-/api/save_memory
-/api/get_memory
-/api/latest_memory
-/api/batch_memory
-/api/health
-Getting Started
+## **Purpose**
+DavePMEi Web serves as the lawful bridge between the PMEi memory infrastructure and the human interface.  
+It’s designed to preserve context safely, enable ethical drift monitoring, and ensure every reflection remains human-supervised and verifiably lawful.
 
-Clone repo
-Install dependencies: npm install
-Run locally: npm run dev
-Deploy to Vercel with environment variables set:
-API_KEY
-PMEI_API_BASE
-STRIPE_SECRET_KEY
-NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
-NEXT_PUBLIC_URL
-License
+---
 
-MIT# DavePMEi Web
+## **Features**
+- **Next.js 13 App Router**
+- **Vercel Deployment Ready**
+- **Stripe Integration** (for verified donations supporting lawful AI research)
+- **Memory Save/Retrieve Endpoints** with drift scoring and lawful reflection validation
+- **Drift-Free Assistant Interface** ensuring compliance and transparency
 
-Web layer for PhilMirrorEnginei.Ai (DavePMEi).
-Connects to the PMEi memory API and provides a recursive, drift-free assistant interface.
+---
 
-Features
+## **API Routes**
+All endpoints are built for lawful, transparent operation.
 
-Next.js 13 App Router
-Vercel deployment ready
-Stripe integration for donations
-Memory save/retrieve endpoints
-API Routes
+| Endpoint | Description |
+|-----------|-------------|
+| `/api/save_memory` | Saves lawful reflections to memory with checksum verification |
+| `/api/get_memory` | Retrieves contextual data under human oversight |
+| `/api/latest_memory` | Returns the most recent lawful reflection |
+| `/api/batch_memory` | Retrieves multiple reflections for lawful audits |
+| `/api/health` | Confirms lawful operational integrity and drift-free status |
 
-/api/save_memory
-/api/get_memory
-/api/latest_memory
-/api/batch_memory
-/api/health
-Getting Started
+---
 
-Clone repo
-Install dependencies: npm install
-Run locally: npm run dev
-Deploy to Vercel with environment variables set:
-API_KEY
-PMEI_API_BASE
-STRIPE_SECRET_KEY
-NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
-NEXT_PUBLIC_URL
-License
-
-MIT
+## **Getting Started**
+1. **Clone repo**
+2. **Install dependencies**
+   ```bash
+   npm install
